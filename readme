@@ -16,3 +16,11 @@ function drawMatrix(matrix) {
     });
 }
 >>>> traverse matrix
+
+const [m, o] = [player.matrix, player];
+>>>> destructing assignment https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+if (pm[y][x] !== 0 && (arena[y + offset.y] && arena[y + offset.y][x + offset.x]) !== 0) {
+    return true;
+}
+>>>> WTF, how does it work
