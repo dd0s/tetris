@@ -1,0 +1,18 @@
+deltatime, delta time, requestAnimationFrame, forEach
+
+function update() {
+    // ... do stuff ...
+    requestAnimationFrame(update);
+}
+>>>> continuation-passing style or what
+
+while(h--) { }
+>>>> while (h != 0) { h-- }
+
+function drawMatrix(matrix) {
+    matrix.forEach((row, y) => {
+        row.forEach((value, x) => {
+        });
+    });
+}
+>>>> traverse matrix
