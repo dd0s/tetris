@@ -24,3 +24,17 @@ if (pm[y][x] !== 0 && (arena[y + offset.y] && arena[y + offset.y][x + offset.x])
     return true;
 }
 >>>> WTF, how does it work
+
+function rotate(matrix, dir) {
+    for (let y = 0; y < matrix.length; ++y) {
+        for (let x = 0; x < matrix[y].length; ++x) {
+            [matrix[x][y], matrix[y][x]] = [matrix[y][x], matrix[x][y]];
+        }
+    }
+    if (dir > 0) {
+        matrix.forEach(row => row.reverse());
+    } else {
+        matrix.reverse();
+    }
+}
+>>>> this is good to know how this thing is implemented 
