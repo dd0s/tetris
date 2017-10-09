@@ -38,3 +38,8 @@ function rotate(matrix, dir) {
     }
 }
 >>>> this is good to know how this thing is implemented 
+
+
+player.pos.x = (arena[0].length / 2) - 
+                (player.matrix[0].length / 2 | 0);
+>>>> WTF 
